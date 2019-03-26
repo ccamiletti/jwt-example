@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7.24
+    environment: 
+      - MYSQL_ROOT_PASSWORD=ccamiletti
+      - MYSQL_DATABASE=ccs
+      - MYSQL_ROOT_HOST=%
+    volumes:
+      - /var/lib/mysql
+    ports:
+      - 3306:3306
